@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>                                                                                                                              
+    <qnx >
+        <id>ca.nettek.supertux</id>
+        <name>SuperTux</name>
+        <versionNumber>1.0</versionNumber>
+        <description>Addicting 2D Sidescroller</description>
+       
+        <initialWindow>
+            <systemChrome>none</systemChrome>
+            <transparent>false</transparent>
+            <autoOrients>false</autoOrients>
+            <aspectRatio>landscape</aspectRatio>
+        </initialWindow>
+     
+        <env var="LD_LIBRARY_PATH" value="app/native/lib"/>
+        <env var="ORIENTATION" value="90"/>
+        <env var="FORCE_PORTRAIT" value="1"/>
+     
+        <author>Nettek</author>
+        <authorId></authorId>
+        <action system="true">run_native</action>
+        <action>play_audio</action>
+        <action>access_shared</action>
+        <action>set_audio_volume</action>
+        <platformArchitecture>armle-v7</platformArchitecture>
+        <asset entry="true" path="supertux" type="Qnx/Elf">supertux</asset>
+        <asset path="lib">lib</asset>
+        <asset path="data">data</asset>
+        <asset path="pbicon.png">pbicon.png</asset>
+        <icon><image>pbicon.png</image></icon>
+    </qnx>
